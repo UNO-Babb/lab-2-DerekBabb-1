@@ -24,8 +24,10 @@ def main():
   num = random.random() #decimal 0 - 1 
   num = num * 1000 #number 0 - 999 with decimals
   num = int(num) # no more decimals
-  num = num % 20 # 0 - 19
   
+  things = len(answers)
+  num = num % things
+
   question = input("Ask me a question: ")
   print(answers[num])
 
